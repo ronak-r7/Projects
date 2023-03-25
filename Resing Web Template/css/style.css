@@ -1,0 +1,204 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+.header-menu-1{
+background: black;
+padding: 10px 0;
+text-align: center;
+}
+.header-menu-1 a{
+ text-decoration: none;
+ color: white;
+ padding: 0px 20px;   
+}
+.header-menu-1 .about {
+    border-right: 1px solid white;
+}
+.header-menu-1 .home {
+    border-right: 1px solid white;
+}
+.navbar{
+    background: grey;
+    display: flex;
+    position: relative
+}
+.navbar .menubar{
+    position: absolute;
+    top: 59%;
+    left: 40%;
+    width: 50%;
+    display: flex;
+    /* background: green; */
+
+}
+.navbar .mainlogo{
+    display: flex;
+    margin: 10px;    
+}
+.navbar .mainlogo .logo{
+    margin-right: 10px;
+}
+.navbar .company{
+    display: flex;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+.navbar .company p{
+    font-size: 30px;
+}
+.navbar .company span{
+    color:rgb(139, 244, 139);
+}
+.navbar .menubar a{
+    margin-right: 30px;
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: black;
+    background: orange;
+    display: block;
+    /* height: 50px; */
+    padding: 15px 0px;
+    width: 150px;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+}
+.navbar .menubar .srch i
+{
+    background: rebeccapurple;
+    padding: 8px;
+    border-radius: 10px 0 0 10px;
+    color:rgb(139, 244, 139)
+}
+.navbar .menubar .srch input{
+    padding: 8px;
+    margin-left: -3px;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+    color:rgb(139, 244, 139)
+}
+.menubar .web-layout{
+   width: 200%;
+   display: flex;
+   text-align: left;
+   background: orange;
+   position: absolute;
+   left: -80%;
+   top: 100%;
+   visibility: hidden;
+}
+.menubar a:hover .web-layout {
+    visibility: visible;
+}
+.menubar .web-layout .left{
+    /* border: 3px solid green; */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    background: wheat;
+    width: 30%;
+    box-shadow: 5px -5px 10px red;
+}
+.menubar .web-layout .right{
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    width: 70%;
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.menubar .web-layout p{
+    color: aliceblue;
+    font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.menubar .srch{
+    position: absolute;
+    left: 400px;
+    top: -50px;
+}
+.menubar #bar{
+    display: none;
+}
+.cnt{
+    display: flex;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.cnt hr{
+
+    width: 100%;
+    margin-top: 10px;
+    height: 5px;
+    background: black;
+}
+.cnt .info{
+width: 70%;
+padding: 30px 40px;
+}
+.cnt .sidebar{
+    width: 30%;
+    /* background: rgb(231, 207, 207); */
+    display: block;
+    padding: 30px 20px;
+}
+.cnt .sidebar h1{
+    margin-bottom: 20px;
+}
+.cnt .info p{
+    margin: 20px 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.cnt .sidebar .sidebar-info{
+    background: orange;
+    text-align: center;
+    padding: 10px;
+}
+.cnt .sidebar .sidebar-info .chk-1{
+    margin-bottom: 20px;
+}
+.footer{
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: rgb(49, 48, 48);
+    color: lightgray; 
+    text-align: center;
+    line-height: 25px;
+    padding: 15px 0px;
+    border-top: 10px solid black;
+}
+
+@media only screen and (max-width:500px)
+{
+    .navbar .menubar{
+         display: none;
+    }
+    .navbar .menubar .srch{
+        display: none;
+    }
+    .navbar .mainlogo{
+        /* display: block; */
+        text-align: center;
+        margin: auto;
+        padding: 10px;    
+    }
+    .cnt{
+        display: block;
+        width: auto;
+    }
+    .cnt .info{
+        width: auto;
+        padding: 20px 20px;
+    }
+    .cnt .sidebar{
+        width: auto;
+        display: block;
+        padding: 10px 10px;
+    }
+    .cnt .sidebar h1{
+        text-align: center;
+    }
+}
